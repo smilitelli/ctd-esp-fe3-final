@@ -25,6 +25,7 @@ const Detail = () => {
       <h2 className="dentistname">{dentist.name}</h2>
       <h3 className="info">{dentist.phone}</h3>
       <h3 className="info">{dentist.email}</h3>
+      <h3 className="info">https:/www.{dentist.website}</h3>
     </>
   )
 }
