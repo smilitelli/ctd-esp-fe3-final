@@ -16,7 +16,7 @@ function App() {
           <Routes>
               <Route path={routes.home} element={<Home />} />
               <Route path={routes.contact} element={<Contact />} />
-              <Route path={routes.detail} element={<Detail />} />
+              <Route path={`${routes.detail}:id`} element={<Detail />} />
               <Route path={routes.favs} element={<Favs />} />
           </Routes>
           <Footer/>
