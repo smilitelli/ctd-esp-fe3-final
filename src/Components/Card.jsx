@@ -11,7 +11,7 @@ const Card = ({ props }) => {
   }
 
   return (
-    <Link className="card" to={routes.detail}>
+    <Link className="card" to={`${routes.detail}${id}`}>
         {/* En cada card deberan mostrar en name - username y el id */}
         <img className="photo" src="./images/doctor.jpg" alt="dentist photo"/>
         <h3>{name}</h3>

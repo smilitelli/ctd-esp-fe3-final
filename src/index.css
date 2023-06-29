@@ -97,6 +97,12 @@ form{
   margin: 0 auto;
 }
 
+.dentistname, .info{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
 table {
  border-collapse: collapse;
     border-spacing: 0;
