@@ -8,8 +8,9 @@ import Detail from "./Routes/Detail";
 import Favs from "./Routes/Favs";
 
 
-
 function App() {
+  
+
   return (
       <div className="App">
           <Navbar/>

@@ -83,6 +83,7 @@ form{
   justify-content: space-around;
   width: 300px;
   height: 100px;
+  padding-top: 4rem;
   margin: 0 auto;
 }
 
@@ -113,6 +114,16 @@ input{
   font-size: 15px;
   margin: 0 1rem;
 }
+
+.resp{
+  display: flex;
+  font-size: 20px;
+  font-style: italic;
+  color: black;
+  margin: 0 1rem;
+  padding: 0.5rem;
+}
+
 .card {
   border-radius: 7px;
   display: flex;
