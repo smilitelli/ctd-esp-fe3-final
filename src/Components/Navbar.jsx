@@ -2,7 +2,7 @@ import React from 'react';
 import { routes } from '../Routes/routes';
 import { Link } from 'react-router-dom';
 import { useThemeStates } from '../Context/ThemeContext/ThemeContext';
-import styles from './Navbar.module.css'
+//import styles from './Navbar.module.css'
 import { themes } from '../Context/ThemeContext/themes';
 
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
@@ -16,19 +16,24 @@ const Navbar = () => {
   };
 
   return (
-    <nav style= {{background: theme.font, color: theme.background}}>
-      <div className={styles.NavbarLinksContainer}/>
+    <nav style= {{background: theme.background, color: theme.font}}>
       {/* Aqui deberan agregar los links correspondientes a las rutas definidas */}
-      <ul>
+      <ul style= {{background: theme.background, color: theme.font}}>
         <li>
-           <Link className="nav-link" to={routes.home}>Home</Link>
-           <Link className="nav-link" to={routes.contact}>Contact</Link>
-           <Link className="nav-link" to={routes.favs}>Favs</Link> 
+           <Link style= {{background: theme.background, color: theme.font}} 
+           className="nav-link" to={routes.home}>Home
+           </Link>
+           <Link style= {{background: theme.background, color: theme.font}} 
+           className="nav-link" to={routes.contact}>Contact
+           </Link>
+           <Link style= {{background: theme.background, color: theme.font}} 
+           className="nav-link" to={routes.favs}>Favs
+           </Link> 
         </li>
       </ul>
       {/* Deberan implementar ademas la logica para cambiar de Theme con el button */}
       <button className="button-theme" onClick={cambiarModo}
-      style={{background: theme.font, color: theme.background}}
+      style={{color: theme.background, background: theme.font}}
       >
         Cambiar modo 🌗 </button>
     </nav>

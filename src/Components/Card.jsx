@@ -13,9 +13,10 @@ const Card = ({ props }) => {
   }
 
   return (
-    <Link className="card" to={`${routes.detail}${id}`}>
+    <Link style= {{background: theme.background, color: theme.font}} 
+    className="card" to={`${routes.detail}${id}`}>
         {/* En cada card deberan mostrar en name - username y el id */}
-        <img className="photo" src="./images/doctor.jpg" alt="dentist photo"/>
+        <img className="photo" src="./images/doctor.jpg" alt="dentist photo" style={{width: '200px'}}/>
         <h3>{name}</h3>
         <h4>{username}</h4>
         <p>{id}</p>
@@ -24,7 +25,8 @@ const Card = ({ props }) => {
 
         {/* Ademas deberan integrar la logica para guardar cada Card en el localStorage */}
         
-        <button onClick={addFav} className="favButton">⭐</button>
+        <button style= {{font: theme.background, color: theme.font}}
+        onClick={addFav} className="favButton">Agregar ⭐</button>
     </Link>
   );
 };
