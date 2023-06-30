@@ -6,6 +6,7 @@ import Home from "./Routes/Home";
 import Contact from "./Routes/Contact";
 import Detail from "./Routes/Detail";
 import Favs from "./Routes/Favs";
+//import Layout from './Layout/Layout';
 import FetchContext from './Context/FetchContext/FetchContext';
 import ThemeContext from './Context/ThemeContext/ThemeContext';
 
@@ -14,7 +15,7 @@ function App() {
   
 
   return (
-      <div className="App">
+      //<div className="App">
         <FetchContext>
         <ThemeContext>
           <Navbar/>
@@ -27,7 +28,7 @@ function App() {
           <Footer/>
         </ThemeContext>
         </FetchContext>
-      </div>
+      //</div>
   );
 }
 

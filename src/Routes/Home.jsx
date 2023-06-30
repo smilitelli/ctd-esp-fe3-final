@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import Card from '../Components/Card';
 import axios from 'axios';
-//<<<<<<< Updated upstream
-//=======
+import { useCardStates } from '../Context/FetchContext/FetchContext';
 import { useThemeStates } from '../Context/ThemeContext/ThemeContext';
-//>>>>>>> Stashed changes
+
 
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
 const Home = () => {
+  const { CardState } = useCardStates
   const [cards, setCards] = useState([]);
   const { theme } = useThemeStates();
   
@@ -23,7 +23,13 @@ const Home = () => {
     <main style={{ background: theme.background, color: theme.font }} className="" >
       <h1>Home</h1>
       <div className='card-grid'>
-        {/* Aqui deberias renderizar las cards */}
+        {cards.CardsList &&
+        CardState.CardList.map((item) => (
+          <Card key={item.id} item={item}/>
+        )
+        /* Aqui deberias renderizar las cards */)}
+        
+        
         <ul>    
           {cards ?
             cards.map((props) => (
