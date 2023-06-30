@@ -1,10 +1,12 @@
 import React from "react";
 import { routes } from "../Routes/routes";
 import { Link } from "react-router-dom";
+import { useThemeStates } from '../Context/ThemeContext/ThemeContext';
 
 const Card = ({ props }) => {
 
   const {name, username, id} = props;
+  const { theme } = useThemeStates();
 
   const addFav = ()=>{
     // Aqui iria la logica para agregar la Card en el localStorage

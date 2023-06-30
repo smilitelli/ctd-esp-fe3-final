@@ -6,6 +6,8 @@ import Home from "./Routes/Home";
 import Contact from "./Routes/Contact";
 import Detail from "./Routes/Detail";
 import Favs from "./Routes/Favs";
+import FetchContext from './Context/FetchContext/FetchContext';
+import ThemeContext from './Context/ThemeContext/ThemeContext';
 
 
 function App() {
@@ -13,6 +15,8 @@ function App() {
 
   return (
       <div className="App">
+        <FetchContext>
+        <ThemeContext>
           <Navbar/>
           <Routes>
               <Route path={routes.home} element={<Home />} />
@@ -21,6 +25,8 @@ function App() {
               <Route path={routes.favs} element={<Favs />} />
           </Routes>
           <Footer/>
+        </ThemeContext>
+        </FetchContext>
       </div>
   );
 }
