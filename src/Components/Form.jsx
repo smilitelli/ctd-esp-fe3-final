@@ -1,6 +1,8 @@
 import React, { useState } from 'react'; 
+import { useThemeStates } from '../Context/ThemeContext/ThemeContext';
 
 const Form = () => {
+  const { theme } = useThemeStates();
   //Aqui deberan implementar el form completo con sus validaciones
   
   const handleChange = (event) => {
@@ -27,11 +29,11 @@ const Form = () => {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <label className="infoLabel">Name:</label>
+        <label className="infoLabel" style={{ color: theme.font }}>Name:</label>
         <input name="name" type="text" placeholder="Enter your name" onChange={handleChange}/>
-        <label className="infoLabel">Email:</label>
+        <label className="infoLabel" style={{ color: theme.font }}>Email:</label>
         <input name="email" type="email" placeholder="Enter your email" onChange={handleChange}/>
-        <button className="button-send">Send</button>
+        <button className="button-send" style={{ color: theme.font, backgroundColor: 'lightblue' }}>Send</button>
         {error && <p className="resp">Por favor verifique su información nuevamente</p>}  
       </form>
        {show ? <p className="resp">Gracias {user.name}, te contactaremos cuanto antes vía mail</p> : null}
