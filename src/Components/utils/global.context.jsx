@@ -49,4 +49,4 @@ export const ContextProvider = ({ children }) => {
 };
 
 export default ContextGlobal;
-export const useDentistStates =() => useContext(ContextGlobal)
+export const useDentistStates =() => useContext(ContextGlobal);
