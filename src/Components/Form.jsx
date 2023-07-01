@@ -33,7 +33,7 @@ const Form = () => {
         <input name="name" type="text" placeholder="Enter your name" onChange={handleChange}/>
         <label className="infoLabel" style={{ color: theme.font }}>Email:</label>
         <input name="email" type="email" placeholder="Enter your email" onChange={handleChange}/>
-        <button className="button-send" style={{ color: theme.font, backgroundColor: 'lightblue' }}>Send</button>
+        <button className="button-send" style={{ color: 'black', backgroundColor: 'lightblue' }}>Send</button>
         {error && <p className="resp">Por favor verifique su información nuevamente</p>}  
       </form>
        {show ? <p className="resp">Gracias {user.name}, te contactaremos cuanto antes vía mail</p> : null}
