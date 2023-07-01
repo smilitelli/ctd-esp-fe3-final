@@ -37,16 +37,16 @@ export const ContextProvider = ({ children }) => {
 
     useEffect(()=>{
       localStorage.setItem('favs',JSON.stringify(dentistState.favs))
-    },[dentistState.favs])
+    },[useDentistState.favs])
 
   return (
     <ContextGlobal.Provider value={{}}>
-      <dentistState.Provider value={{dentistState, dentistDispatch}} >
+      <useDentistState.Provider value={{dentistState, dentistDispatch}} >
       {children}
-      </dentistState.Provider>
+      </useDentistState.Provider>
     </ContextGlobal.Provider>
   );
 };
 
 export default ContextGlobal;
-export const useDentitStates =() => useContext(ContextGlobal)
+export const useDentistState =() => useContext(ContextGlobal)

@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "../Components/Card";
 import  { useThemeStates } from '../Context/ThemeContext/ThemeContext';
+import { useDentistState } from "../Components/utils/global.context";
 
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
