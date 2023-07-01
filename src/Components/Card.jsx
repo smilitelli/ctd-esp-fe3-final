@@ -2,13 +2,19 @@ import React from "react";
 import { routes } from "../Routes/routes";
 import { Link } from "react-router-dom";
 import { useThemeStates } from '../Context/ThemeContext/ThemeContext';
+<<<<<<< HEAD
 import { useDentistStates }  from '../../Context/DentistContext';
+=======
+>>>>>>> 2d80e3aea209821f0f3ba86596b070c3ee597665
 
 const Card = ({ props }) => {
 
   const {name, username, id} = props;
   const { theme } = useThemeStates();
+<<<<<<< HEAD
   const {dentistState, dentistDispatch} = useDentistStates()
+=======
+>>>>>>> 2d80e3aea209821f0f3ba86596b070c3ee597665
 
   const addFav = ()=>{
     // Aqui iria la logica para agregar la Card en el localStorage
