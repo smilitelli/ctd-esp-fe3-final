@@ -22,13 +22,13 @@ const Detail = () => {
       <h1>Detail Dentist</h1>
       {/* aqui deberan renderizar la informacion en detalle de un user en especifico */}
       {/* Deberan mostrar el name - email - phone - website por cada user en especifico */}
-      <label className="infoTit">Name:</label>
+      <label style={{color:'lightblue'}} className="infoTit">Name:</label>
       <h2 className="info">{dentist.name}</h2>
-      <label className="infoTit">Phone N°:</label>
+      <label style={{color:'lightblue'}} className="infoTit">Phone N°:</label>
       <h3 className="info">{dentist.phone}</h3>
-      <label className="infoTit">Email:</label>
+      <label style={{color:'lightblue'}} className="infoTit">Email:</label>
       <h3 className="info">{dentist.email}</h3>
-      <label className="infoTit">Website:</label>
+      <label style={{color:'lightblue'}} className="infoTit">Website:</label>
       <h3 className="info">https://www.{dentist.website}</h3>
     </>
   )
