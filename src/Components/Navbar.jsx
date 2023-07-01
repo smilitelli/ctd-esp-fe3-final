@@ -2,7 +2,7 @@ import React from 'react';
 import { routes } from '../Routes/routes';
 import { Link } from 'react-router-dom';
 import { useThemeStates } from '../Context/ThemeContext/ThemeContext';
-//import styles from './Navbar.module.css'
+//import styles from './Home.style.css'
 import { themes } from '../Context/ThemeContext/themes';
 
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context

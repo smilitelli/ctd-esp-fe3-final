@@ -20,9 +20,9 @@ const Home = () => {
   }, [])
 
   return (
-    <main style={{ background: theme.background, color: theme.font }} className="" >
-      <h1>Home</h1>
-      <div className='card-grid'>
+    <main style={{ background: theme.background, color: theme.font }}  >
+      <h1 >Bienvenido al consultorio online</h1>
+      <div >
         {cards.CardsList &&
         CardState.CardList.map((item) => (
           <Card key={item.id} item={item}/>
@@ -30,7 +30,7 @@ const Home = () => {
         /* Aqui deberias renderizar las cards */)}
         
         
-        <ul>    
+        <ul  className='card-grid'>    
           {cards ?
             cards.map((props) => (
               <li key={props.id}>
@@ -44,3 +44,5 @@ const Home = () => {
 };
 
 export default Home;
+
+//className={styles.homeCards}

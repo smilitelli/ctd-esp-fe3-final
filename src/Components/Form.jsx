@@ -36,7 +36,7 @@ const Form = () => {
         <button className="button-send" style={{ color: 'black', backgroundColor: 'lightblue' }}>Send</button>
         {error && <p className="resp">Por favor verifique su información nuevamente</p>}  
       </form>
-       {show ? <p className="resp">Gracias {user.name}, te contactaremos cuanto antes vía mail</p> : null}
+       {show ? <p style={{color: theme.font}} className="resp">Gracias {user.name}, te contactaremos cuanto antes vía mail</p> : null}
     </div>
   );
 };
