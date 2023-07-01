@@ -3,7 +3,7 @@ import { routes } from "../Routes/routes";
 import { Link } from "react-router-dom";
 import { useThemeStates } from '../Context/ThemeContext/ThemeContext';
 <<<<<<< HEAD
-import { useDentistStates }  from '../src/Components/utils'/
+import { useDentistStates }  from '../src/Components/utils';
 =======
 >>>>>>> 2d80e3aea209821f0f3ba86596b070c3ee597665
 
