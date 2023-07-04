@@ -7,7 +7,6 @@ import Contact from "./Routes/Contact";
 import Detail from "./Routes/Detail";
 import Favs from "./Routes/Favs";
 import Layout from './Layout/Layout';
-import FetchContext from './Context/FetchContext/FetchContext';
 import ThemeContext from './Context/ThemeContext/ThemeContext';
 
 
@@ -15,7 +14,6 @@ function App() {
   
   return (
       //<div className="App">
-        <FetchContext>
         <ThemeContext>
         <Layout>
           <Navbar/>
@@ -28,7 +26,6 @@ function App() {
           <Footer/>
         </Layout>
         </ThemeContext>
-        </FetchContext>
       //</div>
   );
 }

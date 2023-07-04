@@ -40,10 +40,8 @@ export const ContextProvider = ({ children }) => {
     },[dentistState.favs])
 
   return (
-    <ContextGlobal.Provider value={{}}>
-      <dentistState.Provider value={{dentistState, dentistDispatch}} >
+    <ContextGlobal.Provider value={{dentistState, dentistDispatch}}>
       {children}
-      </dentistState.Provider>
     </ContextGlobal.Provider>
   );
 };
